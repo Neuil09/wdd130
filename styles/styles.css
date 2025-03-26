@@ -1,44 +1,58 @@
-nav {
-    background-color: darkblue;
-    padding: 10px;
+/* Define CSS variables */
+:root {
+    --primary-color: darkblue;
+    --secondary-color: white;
+    --border-color: black;
+    --box-shadow-color: gray;
+    --background-light: #eee;
+    --text-dark: #333;
+    --aside-border: rgba(0, 0, 0, 0.2);
+    --padding-small: 2px;
+    --padding-medium: 10px;
+    --padding-large: 20px;
+    --max-width-main: 840px;
+    --width-aside: 20rem;
 }
 
+/* Apply CSS variables */
+nav {
+    background-color: var(--primary-color);
+    padding: var(--padding-medium);
+}
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
-    padding: 20px;
+    padding: var(--padding-large);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: 1px solid var(--border-color);
+    padding: var(--padding-small);
+    box-shadow: 0 0 30px var(--box-shadow-color);
 }
 
 p {
-    padding: 0px;
+    padding: 0;
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--max-width-main);
 }
 
-
 aside {
-    width: 20rem;
+    width: var(--width-aside);
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    /* 1️⃣ */
+    border: 1px solid var(--aside-border);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--background-light);
+    color: var(--text-dark);
     text-align: center;
 }
 
@@ -49,6 +63,6 @@ aside img {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--border-color);
     text-align: center;
 }
