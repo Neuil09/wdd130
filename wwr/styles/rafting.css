@@ -28,22 +28,28 @@ body {
 header {
     background-color: var(--primary-color);
     padding: 20px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
 }
 
 header img {
     width: 120px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+}
+
+header nav {
+    justify-self: end;
 }
 
 nav ul {
     list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 nav a {
@@ -93,9 +99,12 @@ article img {
     margin-left: 20px;
 }
 
+.history-section,
 .adventure-section {
-    margin-top: 60px;
-    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px 0;
 }
 
 .rafting-images {
@@ -136,8 +145,8 @@ footer {
 .social-media {
     margin-top: 10px;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
 .social-media a {
