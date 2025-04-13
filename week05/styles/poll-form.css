@@ -1,0 +1,168 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Merriweather, Georgia, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+
+    header {
+        margin: 0 auto;
+        width: 650px;
+    }
+
+    h1 {
+        margin: 1rem;
+        font-size: 1.5em;
+        color: navy;
+        text-align: center;
+    }
+
+
+
+    form {
+        width: 650px;
+        margin: 0 auto;
+        padding: 1rem;
+        border: 1px solid rgb(0 0 0 / 0.1);
+        border-radius: 0.5rem;
+        background-color: #eee;
+        display: grid;
+    }
+
+    fieldset {
+        display: grid;
+        grid-gap: .5rem;
+        margin: 1rem;
+        border: 1px solid rgb(0 0 0 / 0.2);
+        padding: 1rem;
+    }
+
+    legend {
+        padding: 0.5rem;
+        color: navy;
+        font-size: 1.3em;
+    }
+
+
+    label,
+    input,
+    button,
+    select,
+    textarea {
+        font-family: Roboto, Arial, sans-serif;
+    }
+
+    label {
+        text-align: center;
+        padding-right: 1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 0.3rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    input[type="checkbox"] {
+        width: 22px;
+        height: 22px;
+        vertical-align: bottom;
+    }
+
+    button {
+        margin: 1rem;
+        background-color: navy;
+        color: #fff;
+        border: none;
+        border-radius: .5rem;
+        padding: .75rem;
+        font-size: 1.2rem;
+    }
+
+    button:hover {
+        background-color: darkgreen;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #e0e0e0;
+        border-top: 1px solid #ccc;
+        font-size: 0.9rem;
+    }
+
+    /* Div styling */
+    .form-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .column1 {
+        grid-template-columns: 1fr;
+        text-align: center;
+        /* Centrer le texte dans la colonne */
+    }
+
+    .column2 {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    /* Centrer les questions */
+    #browser,
+    #pet,
+    #feedback {
+        margin: 0 auto;
+        /* Centrer horizontalement */
+        display: block;
+        /* S'assurer que les éléments sont des blocs */
+    }
+
+    /* Ajustements pour les couleurs des écritures */
+    label {
+        color: #333;
+        /* Couleur gris foncé pour les labels */
+    }
+
+    input,
+    select,
+    textarea {
+        color: #333;
+        /* Couleur gris foncé pour les champs de saisie */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+        form {
+            width: 95%;
+        }
+
+        .form-item {
+            grid-template-columns: 1fr;
+        }
+
+        label {
+            text-align: left;
+        }
+    }
