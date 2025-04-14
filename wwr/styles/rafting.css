@@ -329,3 +329,18 @@ form button[type="submit"]:hover {
 .trip-table th {
     background-color: #f2f2f2;
 }
+
+h2 {
+    text-align: center;
+}
+
+
+.grid-item img {
+    max-width: 100%;
+    /* L'image ne va pas dépasser la largeur de son conteneur */
+    height: auto;
+    /* La hauteur s'ajustera automatiquement */
+    aspect-ratio: 1 / 1;
+    /*  aspect carré */
+    object-fit: cover;
+}
