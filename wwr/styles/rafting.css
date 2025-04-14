@@ -335,12 +335,11 @@ h2 {
 }
 
 
-.grid-item img {
-    max-width: 100%;
-    /* L'image ne va pas dépasser la largeur de son conteneur */
-    height: auto;
-    /* La hauteur s'ajustera automatiquement */
-    aspect-ratio: 1 / 1;
-    /*  aspect carré */
-    object-fit: cover;
-}
+.grid-section {
+    display: grid;
+    place-items: center; /* Centrage horizontal et vertical des éléments enfants */
+  }
+  
+  .grid-section h2 {
+    /* Autres styles pour h2 */
+  }
