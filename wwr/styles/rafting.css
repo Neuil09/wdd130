@@ -235,3 +235,97 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+
+
+/* Existing styles from rafting.css */
+
+/* Home page specific styles */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.hero-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.newsletter {
+    text-align: center;
+    padding: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter label,
+.newsletter input,
+.newsletter button {
+    margin: 10px;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.trip-description {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.trip-description img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: #f2f2f2;
+}
